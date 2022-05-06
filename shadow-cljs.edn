@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dev-http
+ {8081 "public"}
+
+ :dependencies
+ [[rm-hull/monet "0.3.0"]]
+
+ :builds
+ {:app {:target :browser
+        :resource-path "public"
+        :modules {:main {:entries [snake.core]}}}}}
